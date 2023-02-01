@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="dolphinVCHomePage"
+    errors="0" failures="0" hostname="" id="" package="dolphinVCHomePage" skipped="0"
+    tests="1" time="6.848" timestamp="">
+  
+    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="6.848" assertions="0">
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
