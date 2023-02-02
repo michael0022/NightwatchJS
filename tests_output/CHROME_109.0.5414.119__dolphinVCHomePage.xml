@@ -5,9 +5,9 @@
 
   <testsuite name="dolphinVCHomePage"
     errors="0" failures="0" hostname="" id="" package="dolphinVCHomePage" skipped="0"
-    tests="1" time="6.717" timestamp="">
+    tests="1" time="6.824" timestamp="">
   
-    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="6.717" assertions="0">
+    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="6.824" assertions="0">
     </testcase>
   
 
