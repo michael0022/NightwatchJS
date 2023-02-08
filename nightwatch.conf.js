@@ -41,6 +41,7 @@ module.exports = {
 
   test_settings: {
     default: {
+      use_xpath: true,
       disable_error_log: false,
       launch_url: 'https://nightwatchjs.org',
 
@@ -51,12 +52,13 @@ module.exports = {
       },
 
       desiredCapabilities: {
-        browserName : 'firefox'
+        browserName : 'firefox',
+        acceptInsecureCerts : true
       },
 
       webdriver: {
         start_process: true,
-        server_path: ''
+        server_path: 'node_modules/.bin/geckodriver'
       }
     },
 
@@ -77,17 +79,21 @@ module.exports = {
       },
       webdriver: {
         start_process: true,
-        server_path: '',
+        server_path: 'node_modules/.bin/geckodriver',
         cli_args: [
           // very verbose geckodriver logs
           // '-vv'
-        ]
+          "--log", "debug"
+        ],
+        port: 4444
       }
     },
 
     chrome: {
       desiredCapabilities : {
         browserName : 'chrome',
+         autoAcceptPermissions: true,
+         autoAcceptAlerts: true,
         'goog:chromeOptions' : {
           // More info on Chromedriver: https://sites.google.com/a/chromium.org/chromedriver/
           //
@@ -98,6 +104,9 @@ module.exports = {
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
             //'--headless'
+          
+            '--use-fake-device-for-media-stream',
+            '--use-fake-ui-for-media-stream'
           ]
         }
       },
@@ -127,7 +136,7 @@ module.exports = {
         start_process: true,
         // Download msedgedriver from https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/
         //  and set the location below:
-        server_path: '',
+        server_path: 'node_modules/.bin/msedgedriver',
         cli_args: [
           // --verbose
         ]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="1"
+            tests="1">
+
+  <testsuite name="elements"
+    errors="0" failures="1" hostname="" id="" package="elements" skipped="0"
+    tests="1" time="1.752" timestamp="">
+  
+    <testcase name="table elements rows" classname="elements" time="1.752" assertions="1">  <failure message="Cannot read properties of undefined (reading &#39;length&#39;)">TypeError: Cannot read properties of undefined (reading &#39;length&#39;)
+    at table elements rows (/home/nouveua/nightwatchjs/tests/elements.js:7:58)</failure>
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

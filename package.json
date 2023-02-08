@@ -12,6 +12,7 @@
   "devDependencies": {
     "chromedriver": "^109.0.0",
     "geckodriver": "^3.2.0",
+    "html-dnd": "^1.2.1",
     "nightwatch": "^2.6.11"
   }
 }
