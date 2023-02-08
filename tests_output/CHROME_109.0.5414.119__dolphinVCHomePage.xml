@@ -1,16 +1,58 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="2"
             failures="0"
             tests="1">
 
   <testsuite name="dolphinVCHomePage"
-    errors="0" failures="0" hostname="" id="" package="dolphinVCHomePage" skipped="0"
-    tests="1" time="12.36" timestamp="">
+    errors="2" failures="0" hostname="" id="" package="dolphinVCHomePage" skipped="0"
+    tests="1" time="59.19" timestamp="">
   
-    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="12.36" assertions="0">
+    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="59.19" assertions="0">
+    <error message="An error occurred while running .click() command on &lt;//*[@id=&#34;root&#34;]/div[3]/div[2]/div/div[4]/div/div/button/span&gt;: Timed out while waiting for element &#34;//*[@id=&#34;root&#34;]/div[3]/div[2]/div/div[4]/div/div/button/span&#34; with &#34;xpath&#34; to be present for 5000 milliseconds." type="error"><![CDATA[
+    Error
+    at Lets connect over conference ! (/home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:20:17)
+    ]]></error>
+    
     </testcase>
   
 
+  
+    <system-err>
+       NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     16 |         browser.click(&#39;//*[@id=&#34;root&#34;]/div[3]/div/div/div[2]/span&#39;)
+     17 | 
+     18 |         browser.click(&#39;//*[@id=&#34;root&#34;]/div[3]/div[2]/div/div[3]/div/div/div[2]&#39;) 
+     19 | 
+     20 |         browser.click(&#39;//*[@id=&#34;root&#34;]/div[3]/div[2]/div/div[4]/div/div/button/span&#39;)
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+ NoSuchElementError
+   An element could not be located on the page using the given search parameters.
+
+    Try fixing by :
+    1. Please inspect the html before the step
+    2. Verify if an element with the mentioned selector is present in the DOM tree
+
+    Error location:
+    /home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
+     18 |         browser.click(&#39;//*[@id=&#34;root&#34;]/div[3]/div[2]/div/div[3]/div/div/div[2]&#39;)
+     19 | 
+     20 |         browser.click(&#39;//*[@id=&#34;root&#34;]/div[3]/div[2]/div/div[4]/div/div/button/span&#39;) 
+     21 |         browser.pause(8*1000)
+     22 |         browser.end()
+    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+    </system-err>
   
 
     
