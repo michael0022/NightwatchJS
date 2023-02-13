@@ -123,11 +123,15 @@ module.exports = {
     edge: {
       desiredCapabilities : {
         browserName : 'MicrosoftEdge',
+        autoAcceptPermissions: true,
+         autoAcceptAlerts: true,
         'ms:edgeOptions' : {
           w3c: true,
           // More info on EdgeDriver: https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/capabilities-edge-options
           args: [
             //'--headless'
+            '--use-fake-device-for-media-stream',
+            '--use-fake-ui-for-media-stream'
           ]
         }
       },

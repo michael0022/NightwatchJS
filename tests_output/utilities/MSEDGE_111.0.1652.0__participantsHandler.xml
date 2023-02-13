@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
+<testsuites errors="0"
             failures="0"
-            tests="1">
+            tests="0">
 
-  <testsuite name="dolphinVCHomePage"
-    errors="1" failures="0" hostname="" id="" package="dolphinVCHomePage" skipped="0"
-    tests="1" time="0.05700" timestamp="">
-  
-    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="0.05700" assertions="0">
-    <error type="error"><![CDATA[
-    ReferenceError: Queue is not defined
-    at Lets connect over conference ! (/home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:5:23)
-    at Context.call (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/context.js:478:35)
-    at TestCase.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
-    at Runnable.__runFn (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:80)
-    at Runnable.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
-    at TestSuite.executeRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:898:49)
-    at TestSuite.handleRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:913:33)
-    at /home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/runner/test-runners/default.js:76:7)
-    ]]></error>
-    
-    </testcase>
+  <testsuite name="utilities.participantsHandler"
+    errors="0" failures="0" hostname="" id="" package="utilities" skipped="0"
+    tests="0" time="0.000" timestamp="">
   
 
   
