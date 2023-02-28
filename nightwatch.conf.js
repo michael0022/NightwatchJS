@@ -15,10 +15,12 @@
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ["./tests"],
+  
+  src_folders: ['./conference'],
+  //src_folders: ['./nwaycalling'],
 
   // See https://nightwatchjs.org/guide/concepts/page-object-model.html
-  page_objects_path: ['node_modules/nightwatch/examples/pages/'],
+  page_objects_path: ['./page-objects'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
   custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
@@ -67,13 +69,33 @@ module.exports = {
     firefox: {
       desiredCapabilities : {
         browserName : 'firefox',
+        autoAcceptPermissions: true,
+        autoAcceptAlerts: true,
         alwaysMatch: {
           acceptInsecureCerts: true,
           'moz:firefoxOptions': {
+            w3c: true,
             args: [
               // '-headless',
-              // '-verbose'
-            ]
+              // '-verbose',
+            //  '--use-fake-device-for-media-stream',
+            //'--use-fake-ui-for-media-stream'
+            ],
+
+            'dom.disable_beforeunload': true,
+                       'dom.webnotifications.enabled': false,
+                       'media.webrtc.hw.h264.enabled': true,
+                       'dom.disable_open_during_load': true,
+                       'media.getusermedia.screensharing.enabled': true,
+                       'media.navigator.permission.disabled': true,
+                       'media.navigator.streams.fake': true,
+                       'media.peerconnection.video.h264_enabled': true,
+
+            prefs: {
+              // 0 - Default, 1 - Allow, 2 - Block
+                      
+                       'permissions.default.desktop-notification': 1
+            }
           }
         }
       },
@@ -99,15 +121,23 @@ module.exports = {
           //
           // w3c:false tells Chromedriver to run using the legacy JSONWire protocol (not required in Chrome 78)
           w3c: true,
+          
           args: [
             //'--no-sandbox',
             //'--ignore-certificate-errors',
             //'--allow-insecure-localhost',
-            //'--headless'
-          
+            //'--headless',
             '--use-fake-device-for-media-stream',
             '--use-fake-ui-for-media-stream'
-          ]
+          ],
+
+          prefs: {
+            // 0 - Default, 1 - Allow, 2 - Block
+          'profile.managed_default_content_settings.notifications': 1,
+          'profile.default_content_setting_values.media_stream_camera': 1,
+          'profile.default_content_setting_values.geolocation':1,
+          'profile.default_content_setting_values.media_stream_mic': 1
+          }
         }
       },
 
@@ -132,7 +162,15 @@ module.exports = {
             //'--headless'
             '--use-fake-device-for-media-stream',
             '--use-fake-ui-for-media-stream'
-          ]
+          ],
+
+          prefs: {
+            // 0 - Default, 1 - Allow, 2 - Block
+          'profile.managed_default_content_settings.notifications': 1,
+          'profile.default_content_setting_values.media_stream_camera': 1,
+          'profile.default_content_setting_values.geolocation':1,
+          'profile.default_content_setting_values.media_stream_mic': 1
+          }
         }
       },
 

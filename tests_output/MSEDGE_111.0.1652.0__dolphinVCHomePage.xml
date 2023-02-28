@@ -1,108 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="1"
-            failures="0"
+<testsuites errors="0"
+            failures="1"
             tests="1">
 
   <testsuite name="dolphinVCHomePage"
-    errors="1" failures="0" hostname="" id="" package="dolphinVCHomePage" skipped="0"
-    tests="1" time="0.05700" timestamp="">
+    errors="0" failures="1" hostname="" id="" package="dolphinVCHomePage" skipped="0"
+    tests="1" time="13.26" timestamp="">
   
-    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="0.05700" assertions="0">
-    <error type="error"><![CDATA[
-    ReferenceError: Queue is not defined
-    at Lets connect over conference ! (/home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:5:23)
-    at Context.call (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/context.js:478:35)
-    at TestCase.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
-    at Runnable.__runFn (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:80)
-    at Runnable.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
-    at TestSuite.executeRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:898:49)
-    at TestSuite.handleRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:913:33)
-    at /home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/runner/test-runners/default.js:76:7)
-    ]]></error>
+    <testcase name="Lets connect over conference !" classname="dolphinVCHomePage" time="13.26" assertions="5">
+
+    
+
+    
+
+    
+
+      <failure message="Timed out while waiting for element &lt;//*[@id=&#34;root&#34;]/div[4]/div/div/div[2]/div[3]/div[1]/div[2]/div/input&gt; to be present for 5000 milliseconds. - expected &#34;visible&#34; but got: &#34;not found&#34; (5100ms)">    at runTest (/home/nouveua/nightwatchjs/conference/dolphinVCHomePage.js:20:10)
+    at NightwatchAPI.&lt;anonymous&gt; (/home/nouveua/nightwatchjs/conference/dolphinVCHomePage.js:39:20)</failure>
+
     
     </testcase>
   
 
-  
-    <system-err>
-       ✖ ReferenceError
-   Queue is not defined
-
-    Error location:
-    /home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
-     3 |     &#34;Lets connect over conference !&#34;: async function(browser) {
-     4 | 
-     5 |         const queue = new Queue() 
-     6 |         console.log(queue.enqueue(&#39;Mahbub&#39;))
-     7 |         console.log(queue.enqueue(&#39;Aditya&#39;))
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Stack Trace :
-    at Lets connect over conference ! (/home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:5:23)
-    at Context.call (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/context.js:478:35)
-    at TestCase.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
-    at Runnable.__runFn (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:80)
-    at Runnable.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
-    at TestSuite.executeRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:898:49)
-    at TestSuite.handleRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:913:33)
-    at /home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/runner/test-runners/default.js:76:7)
-
- ✖ ReferenceError
-   Queue is not defined
-
-    Error location:
-    /home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
-     3 |     &#34;Lets connect over conference !&#34;: async function(browser) {
-     4 | 
-     5 |         const queue = new Queue() 
-     6 |         console.log(queue.enqueue(&#39;Mahbub&#39;))
-     7 |         console.log(queue.enqueue(&#39;Aditya&#39;))
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Stack Trace :
-    at Lets connect over conference ! (/home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:5:23)
-    at Context.call (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/context.js:478:35)
-    at TestCase.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
-    at Runnable.__runFn (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:80)
-    at Runnable.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
-    at TestSuite.executeRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:898:49)
-    at TestSuite.handleRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:913:33)
-    at /home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/runner/test-runners/default.js:76:7)
-
- ✖ ReferenceError
-   Queue is not defined
-
-    Error location:
-    /home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
-     3 |     &#34;Lets connect over conference !&#34;: async function(browser) {
-     4 | 
-     5 |         const queue = new Queue() 
-     6 |         console.log(queue.enqueue(&#39;Mahbub&#39;))
-     7 |         console.log(queue.enqueue(&#39;Aditya&#39;))
-    –––––––––––––––––––––––––––––––––––––––––––––––––––––––
-
-    Stack Trace :
-    at Lets connect over conference ! (/home/nouveua/nightwatchjs/tests/dolphinVCHomePage.js:5:23)
-    at Context.call (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/context.js:478:35)
-    at TestCase.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/testcase.js:58:31)
-    at Runnable.__runFn (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:80)
-    at Runnable.run (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/runnable.js:126:21)
-    at TestSuite.executeRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:898:49)
-    at TestSuite.handleRunnable (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:913:33)
-    at /home/nouveua/nightwatchjs/node_modules/nightwatch/lib/testsuite/index.js:745:21
-    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at async DefaultRunner.runTestSuite (/home/nouveua/nightwatchjs/node_modules/nightwatch/lib/runner/test-runners/default.js:76:7)
-
-    </system-err>
   
 
     

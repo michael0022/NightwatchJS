@@ -12,7 +12,7 @@ module.exports = {
         browser.setValue(xpathSelector, "this is xpath")
         browser.pause(2 * 1000)
 
-        browser.end()
+        //browser.end()
     },
 
     "the next test" : function(browser) {
@@ -31,6 +31,6 @@ module.exports = {
         browser.setValue(cssSelector, "this is css again")
         browser.pause(2 * 1000)
         
-        browser.end()
+        //browser.end()
     }
 }
